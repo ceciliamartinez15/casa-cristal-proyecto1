@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jpg.png" alt="Logo" class="logo">
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="integrantes.html">integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Ubicación</h2>
+        <div class="map">
+            
+            <img src="imagenes/maps.jpg" alt="Imagen maps">
+            
+        </div>
+        <div class="link-container">
+            <a href="https://maps.app.goo.gl/qk8Rv9rsSsN94ehM7?g_st=com.google.maps.preview.-copy" target="_blank">Ver ubicación en Google Maps</a>
+        </div>
+
+    </main>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
+        });
+    </script>
+</body>
+</html>
